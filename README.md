@@ -1,48 +1,51 @@
 # Ruta Felina Recoleta 🐱✨
 
-[![Demo Live](https://img.shields.io/badge/Ver_Demo-Live-brightgreen)](https://tina0o0.github.io/ruta-felina)
-[![Responsive](https://img.shields.io/badge/Responsive-✓-blue)](https://tina0o0.github.io/ruta-felina)
-[![HTML/CSS/JS](https://img.shields.io/badge/Tech-HTML_CSS_JS-orange)](https://github.com/tina0o0/ruta-felina)
+[![Demo Live](https://img.shields.io/badge/Ver_Demo-Live-brightgreen)](https://tina0o0.github.io/ruta-felina-recoleta)
+[![Responsive](https://img.shields.io/badge/Responsive-✓-blue)](https://tina0o0.github.io/ruta-felina-recoleta)
+[![UNAB](https://img.shields.io/badge/Materia-UNAB%20Creatividad%20Emprendimiento-purple)](https://tina0o0.github.io/ruta-felina-recoleta)
 
-**Proyecto de diseño gráfico interactivo UNAB**: Plataforma web para visibilizar ~6.232 gatos callejeros en Recoleta y conectar comunidad (mapa, campañas, reportes).[cite:3]
+**Proyecto Creatividad y Emprendimiento UNAB (Equipo 3 integrantes)**: Solución innovadora para ~6.232 gatos callejeros en Recoleta. App gamificada (estilo Pokémon GO) + campañas visuales + mapa comunitario.[cite:3][cite:41]
+
+![Hero Preview](hero-screenshot.png)
 
 ## 🎯 Descripción
-Web responsive que soluciona la sobrepoblación felina dispersa:  
-- **Mapa crítico**: Colonias y zonas de apoyo.  
-- **Campañas**: Tenencia responsable.  
-- **Red vecinal**: Reportes colaborativos.  
-Animaciones suaves + mobile-first para entrega académica.
+Sistema emprendedor creativo:  
+- **App geolocalizada**: Reporta colonias, misiones cuidado.  
+- **Campañas gráficas**: Tenencia responsable.  
+- **Mapa físico**: Zonas críticas Recoleta.  
+Propuesta para impacto social (esterilización + comunidad).[cite:56]
 
 ## 🚀 Demo en Vivo
-[👉 Abrir Ruta Felina](https://tina0o0.github.io/ruta-felina-recoletas)[file:23]
+[👉 Abrir Ruta Felina](https://tina0o0.github.io/ruta-felina-recoleta)[file:23]
 
-## 📁 Estructura de Archivos
+## 📁 Estructura Archivos
 | Archivo | Descripción | Tamaño |
 |---------|-------------|--------|
-| `index.html` | Estructura + contenido | 6.7KB [file:23] |
-| `index.css` | Estilos CSS3 responsive | 7.4KB [file:25] |
-| `index.js` | Menú + animaciones JS | 809B [file:24] |
+| `index.html` | Landing interactiva | 6.7KB [file:23] |
+| `index.css` | Diseño responsive + animaciones | 7.4KB [file:25] |
+| `index.js` | Menú mobile + scroll reveal | 809B [file:24] |
 
-## 🛠️ Tecnologías
-HTML5 | CSS3 | Vanilla JS | Google Fonts
+## 🛠️ Stack Técnico
+HTML5/CSS3/JS Vanilla | Google Fonts | Mobile-First.
 
-## ⚡ Instalación & Deploy
-1. `git clone https://github.com/tina0o0/ruta-felina-recoletas.git`
-2. `open index.html`
-3. **GitHub Pages**: Settings > Pages > main branch.
+## ⚡ Deploy GitHub Pages
+```bash
+git clone https://github.com/tina0o0/ruta-felina-recoleta.git
+open index.html
+```
+Live: Settings > Pages > main branch.
 
 ## 📱 Screenshots
 | Desktop | Mobile |
 |---------|--------|
 | ![Desktop](desktop.png) | ![Mobile](mobile.png) |
 
-## 🎨 Features
-- Navbar sticky + mobile menu.
-- Scroll animations.
-- Dark/light sections.
-
-## 📊 Datos
-~6.232 gatos Recoleta (1:7).[cite:3]
+## 🎯 Impacto Emprendedor
+- **Problema**: Sobrepoblación felina (abandono, falta esterilización).[cite:3]  
+- **Oportunidad**: App + diseño activan comunidad Recoleta.  
+- **Innovación**: Gamificación + visuales UNAB para cambio social.[cite:47]
 
 ## 📄 Licencia
-© 2026 Tina – UNAB Diseño Gráfico.
+© 2026 Equipo Ruta Felina – UNAB Creatividad y Emprendimiento.
+
+**#UNAB #CreatividadEmprendimiento**
