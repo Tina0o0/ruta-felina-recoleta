@@ -1,3 +1,6 @@
+Claro, aquí tienes el CSS completo otra vez para pegar en styles.css:
+
+css
 :root{
   --bg:#f3eee6;
   --panel:#fffdf8;
@@ -310,3 +313,178 @@ a{
   position:absolute;
   left:-12%;
   top:18%;
+  width:260px;
+  height:260px;
+  border-radius:50%;
+  background:radial-gradient(circle, rgba(79,118,98,.18), rgba(79,118,98,0) 68%);
+}
+
+.screen-top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  position:relative;
+  z-index:1;
+}
+
+.appname{
+  font-weight:900;
+  letter-spacing:.12em;
+  color:var(--primary-dark);
+  text-transform:uppercase;
+}
+
+.chip{
+  padding:8px 11px;
+  border-radius:999px;
+  background:#fff;
+  border:1px solid var(--line);
+  color:var(--muted);
+  font-size:.76rem;
+}
+
+.map{
+  margin-top:14px;
+  height:260px;
+  border-radius:22px;
+  border:1px solid #e3d7c6;
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(135deg,#f8f1e7 0%,#f0e6d3 100%);
+}
+
+.map:before,
+.map:after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background-image:
+    linear-gradient(to right, rgba(96,104,89,.09) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(96,104,89,.09) 1px, transparent 1px);
+  background-size:36px 36px;
+  opacity:.72;
+}
+
+.map .zone{
+  position:absolute;
+  border-radius:50%;
+  filter:blur(.2px);
+}
+
+.zone.z1{width:76px;height:76px;left:52px;top:48px;background:rgba(79,118,98,.16)}
+.zone.z2{width:100px;height:100px;left:158px;top:118px;background:rgba(197,138,82,.16)}
+.zone.z3{width:86px;height:86px;right:82px;top:72px;background:rgba(79,118,98,.18)}
+.zone.z4{width:88px;height:88px;right:46px;bottom:44px;background:rgba(197,138,82,.14)}
+
+.pin{
+  position:absolute;
+  width:18px;
+  height:18px;
+  background:var(--primary);
+  transform:rotate(-45deg);
+  border-radius:50% 50% 50% 0;
+  box-shadow:0 0 0 10px rgba(79,118,98,.12);
+  z-index:2;
+}
+
+.pin.orange{
+  background:var(--accent);
+  box-shadow:0 0 0 10px rgba(197,138,82,.12);
+}
+
+.pin:after{
+  content:'';
+  position:absolute;
+  left:5px;
+  top:5px;
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:#fff;
+}
+
+.panel-stack{
+  display:grid;
+  gap:12px;
+  margin-top:14px;
+  position:relative;
+  z-index:1;
+}
+
+.panel{
+  background:rgba(255,255,255,.82);
+  border:1px solid #efe2cf;
+  border-radius:20px;
+  padding:15px;
+  box-shadow:0 8px 24px rgba(0,0,0,.04);
+}
+
+.panel h3{
+  margin:0 0 6px;
+  font-size:1rem;
+}
+
+.panel p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.6;
+  font-size:.95rem;
+}
+
+.tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:10px;
+}
+
+.tag{
+  border:1px solid #dce6de;
+  background:#edf5ef;
+  color:var(--primary-dark);
+  border-radius:999px;
+  padding:8px 10px;
+  font-size:.78rem;
+  font-weight:800;
+  cursor:pointer;
+  transition:.18s ease;
+  user-select:none;
+}
+
+.tag.active{
+  background:var(--primary);
+  color:#fff;
+  border-color:var(--primary);
+  transform:translateY(-1px);
+}
+
+.section{margin-top:20px}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:14px;margin-bottom:12px}
+.section-head h3{margin:0;font-size:1.38rem;letter-spacing:-.02em}
+.section-head p{margin:0;color:var(--muted);max-width:64ch;line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.feature{background:var(--panel);border:1px solid var(--line);border-radius:24px;padding:18px;min-height:178px;box-shadow:var(--shadow-soft);position:relative;overflow:hidden}
+.feature:before{content:'';position:absolute;right:-22px;top:-22px;width:92px;height:92px;border-radius:50%;background:radial-gradient(circle, rgba(79,118,98,.10), transparent 70%)}
+.feature .k{display:inline-flex;align-items:center;gap:8px;font-size:.75rem;font-weight:900;text-transform:uppercase;letter-spacing:.08em;color:var(--primary-dark);background:#edf4ef;padding:7px 10px;border-radius:999px}
+.feature h4{margin:12px 0 8px;font-size:1.03rem}
+.feature p{margin:0;color:var(--muted);line-height:1.65}
+.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.step{background:var(--panel);border:1px solid var(--line);border-radius:24px;padding:18px;min-height:200px;box-shadow:var(--shadow-soft)}
+.num{width:38px;height:38px;border-radius:999px;display:grid;place-items:center;background:var(--primary);color:#fff;font-weight:900;margin-bottom:10px}
+.step h4{margin:0 0 8px;font-size:1.01rem}
+.step p{margin:0;color:var(--muted);line-height:1.65}
+.footer{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.note{background:var(--panel);border:1px solid var(--line);border-radius:24px;padding:18px;box-shadow:var(--shadow-soft)}
+.note h4{margin:0 0 8px;font-size:1rem}
+.note p{margin:0;color:var(--muted);line-height:1.65}
+.divider{height:1px;background:linear-gradient(90deg, transparent, rgba(104,112,120,.28), transparent);margin-top:20px}
+.footbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:20px;color:var(--muted);font-size:.9rem}
+@media (max-width:1100px){
+  .hero,.grid,.timeline,.footer,.hero-metrics{grid-template-columns:1fr}
+  .phone{max-width:none}
+  .screen{min-height:auto}
+  .topbar{border-radius:22px;align-items:flex-start;flex-direction:column}
+  .nav{gap:8px}
+  .brand p{white-space:normal}
+}
