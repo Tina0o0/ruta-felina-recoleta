@@ -1,4 +1,4 @@
-# Ruta Felina Recoleta 🐱✨
+# GeoCat🐱✨
 
 [![Demo Live](https://img.shields.io/badge/Ver_Demo-Live-brightgreen)](https://tina0o0.github.io/ruta-felina-recoleta)
 [![Responsive](https://img.shields.io/badge/Responsive-✓-blue)](https://tina0o0.github.io/ruta-felina-recoleta)
