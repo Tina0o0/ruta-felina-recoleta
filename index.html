@@ -1,152 +1,140 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GeoCat</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="index.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GEOCAT · Plataforma de acción comunitaria</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="topbar">
-    <div class="container nav-wrap">
-      <a class="logo" href="#inicio">
-        <span class="logo-mark">🐾</span>
-        <span>GeoCat</span>
-      </a>
-      <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false">☰</button>
-      <nav class="nav" aria-label="Principal">
-        <a href="#problema">Problema</a>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>GEOCAT</h1>
+          <p>Plataforma de acción comunitaria para Recoleta</p>
+        </div>
+      </div>
+      <nav class="nav">
         <a href="#solucion">Solución</a>
-        <a href="#como-funciona">Cómo funciona</a>
-        <a href="#participa">Participa</a>
+        <a href="#funciones">Funciones</a>
+        <a href="#implementacion">Implementación</a>
+        <a href="#resultado">Resultado</a>
       </nav>
-    </div>
-  </header>
+    </header>
 
-  <main id="inicio">
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Recoleta · cuidado animal · comunidad</p>
-          <h1>Conectar vecinos, información y acción para mejorar la convivencia con los gatos callejeros.</h1>
-          <p class="lead">Ruta Felina Recoleta es una propuesta pública para visibilizar la situación de los gatos callejeros y fomentar una respuesta comunitaria más organizada, clara y cercana.</p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#participa">Participar</a>
-            <a class="btn secondary" href="#solucion">Conocer la propuesta</a>
-          </div>
+      <div class="card hero-copy">
+        <span class="badge">Diseño gráfico · experiencia · territorio</span>
+        <h2>Una plataforma que convierte el problema en acción organizada</h2>
+        <p class="lead">GEOCAT aborda la sobrepoblación de gatos callejeros con una solución híbrida: una experiencia digital para reportar, alertar y educar, complementada con campañas visuales, mapa físico y activaciones barriales.</p>
+        <div class="cta">
+          <button class="btn primary" onclick="go('solucion')">Explorar propuesta</button>
+          <button class="btn secondary" onclick="go('implementacion')">Ver plan</button>
         </div>
-        <div class="hero-card reveal delay-1" aria-hidden="true">
-          <div class="hero-badge">Mapa + comunidad + cuidado</div>
-          <div class="card-visual">
-            <span class="dot dot-1"></span>
-            <span class="dot dot-2"></span>
-            <span class="dot dot-3"></span>
-            <div class="line line-1"></div>
-            <div class="line line-2"></div>
-            <div class="line line-3"></div>
-          </div>
-          <div class="mini-stats">
-            <div><strong>Reportar</strong><span>zonas críticas</span></div>
-            <div><strong>Informar</strong><span>campañas activas</span></div>
-            <div><strong>Colaborar</strong><span>como comunidad</span></div>
-          </div>
+        <div class="hero-metrics">
+          <div class="metric"><b>Colaboración</b><span>Red de apoyo para coordinar rescates, difusión y participación vecinal.</span></div>
+          <div class="metric"><b>Alertas</b><span>Reportes geolocalizados sobre colonias, gatos perdidos y puntos críticos.</span></div>
+          <div class="metric"><b>Educación</b><span>Contenido claro sobre esterilización, adopción y tenencia responsable.</span></div>
         </div>
+        <div class="hero-note"><b>Idea madre:</b> no solo informar, sino activar a la comunidad con una experiencia visual, útil y territorial.</div>
       </div>
-    </section>
 
-    <section id="problema" class="section">
-      <div class="container split">
-        <div class="section-title reveal">
-          <p class="eyebrow">El problema</p>
-          <h2>La sobrepoblación de gatos callejeros afecta la convivencia en la comuna.</h2>
-        </div>
-        <div class="section-body reveal delay-1">
-          <p>En varios sectores de Recoleta, la presencia constante de gatos callejeros genera preocupación por la suciedad, la reproducción descontrolada y la falta de información clara sobre cómo actuar.</p>
-          <p>Muchas personas ayudan por cuenta propia, pero la ausencia de una red común hace que el esfuerzo quede disperso y que el problema siga creciendo.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="solucion" class="section soft">
-      <div class="container">
-        <div class="section-title center reveal">
-          <p class="eyebrow">La propuesta</p>
-          <h2>Una experiencia simple para reportar, orientar y conectar.</h2>
-          <p>La web reúne información útil para vecinos, personas pet friendly y organizaciones que quieran aportar a una mejor convivencia.</p>
-        </div>
-        <div class="features">
-          <article class="feature reveal">
-            <span>📍</span>
-            <h3>Mapa comunitario</h3>
-            <p>Ubica puntos críticos, sectores con colonias felinas y zonas donde se requiere apoyo.</p>
-          </article>
-          <article class="feature reveal delay-1">
-            <span>📣</span>
-            <h3>Difusión clara</h3>
-            <p>Comunica campañas, jornadas de ayuda y mensajes de tenencia responsable con lenguaje simple.</p>
-          </article>
-          <article class="feature reveal delay-2">
-            <span>🤝</span>
-            <h3>Red vecinal</h3>
-            <p>Permite que la comunidad se organice y actúe de manera más coordinada y visible.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="como-funciona" class="section dark">
-      <div class="container">
-        <div class="section-title reveal">
-          <p class="eyebrow">Cómo funciona</p>
-          <h2>La experiencia se entiende en tres pasos.</h2>
-        </div>
-        <div class="steps">
-          <article class="step reveal">
-            <span>01</span>
-            <h3>Explora</h3>
-            <p>Revisa el mapa y reconoce los sectores con mayor presencia de gatos callejeros.</p>
-          </article>
-          <article class="step reveal delay-1">
-            <span>02</span>
-            <h3>Actúa</h3>
-            <p>Participa en reportes, campañas o acciones comunitarias difundidas en la web.</p>
-          </article>
-          <article class="step reveal delay-2">
-            <span>03</span>
-            <h3>Comparte</h3>
-            <p>Difunde la información con otras personas para ampliar el alcance del proyecto.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="participa" class="section">
-      <div class="container split participate">
-        <div class="section-title reveal">
-          <p class="eyebrow">Participa</p>
-          <h2>Si vives, trabajas o te mueves por Recoleta, puedes ser parte.</h2>
-        </div>
-        <div class="section-body reveal delay-1">
-          <p>Comparte información útil, apoya iniciativas barriales y ayuda a que la situación de los gatos callejeros se aborde con más orden y empatía.</p>
-          <div class="cta-box">
-            <p><strong>Tu acción importa:</strong> reportar, difundir y colaborar también son formas de mejorar el entorno.</p>
-            <a class="btn primary" href="mailto:gecat@gmail.com">Contactar</a>
+      <div class="card mock">
+        <div class="phone">
+          <div class="screen">
+            <div class="screen-top">
+              <div class="appname">GEOCAT</div>
+              <div class="chip">Recoleta · Chile</div>
+            </div>
+            <div class="map" aria-label="Mapa conceptual">
+              <div class="zone z1"></div><div class="zone z2"></div><div class="zone z3"></div><div class="zone z4"></div>
+              <div class="pin" style="left:60px;top:58px"></div>
+              <div class="pin orange" style="left:165px;top:108px"></div>
+              <div class="pin" style="right:95px;top:72px"></div>
+              <div class="pin orange" style="right:60px;bottom:42px"></div>
+            </div>
+            <div class="panel-stack">
+              <div class="panel">
+                <h3>Alerta activa</h3>
+                <p>Se detectó una nueva colonia felina en tu sector. Revisa la ubicación y participa desde tu barrio.</p>
+              </div>
+              <div class="panel">
+                <h3>Acciones rápidas</h3>
+                <div class="tags">
+                  <span class="tag active">Reportar</span>
+                  <span class="tag">Adoptar</span>
+                  <span class="tag">Educar</span>
+                  <span class="tag">Compartir</span>
+                </div>
+              </div>
+              <div class="panel">
+                <h3>Misiones comunitarias</h3>
+                <p>Participa en operativos, difunde campañas y ayuda a registrar casos para fortalecer la red local.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-  </main>
 
-  <footer class="footer">
-    <div class="container footer-wrap">
-      <p>Ruta Felina Recoleta · Una propuesta para cuidar la convivencia y el bienestar animal en la comuna.</p>
-      <a href="#inicio">Volver arriba ↑</a>
-    </div>
-  </footer>
+    <section class="section" id="solucion">
+      <div class="section-head">
+        <div>
+          <h3>Solución integrada</h3>
+          <p>Una propuesta con sistema digital y soporte en el espacio público para aumentar alcance y comprensión.</p>
+        </div>
+      </div>
+      <div class="grid">
+        <article class="feature"><div class="k">Plataforma</div><h4>App central</h4><p>Permite reportar gatos, ubicar colonias, revisar información útil y conectar con acciones concretas en el territorio.</p></article>
+        <article class="feature"><div class="k">Territorio</div><h4>Campaña visual</h4><p>Piezas gráficas, señalética y contenidos en redes para visibilizar el problema y orientar a la comunidad.</p></article>
+        <article class="feature"><div class="k">Comunidad</div><h4>Apoyo presencial</h4><p>Mapa físico, talleres y activaciones barriales para que más personas participen sin depender solo del celular.</p></article>
+      </div>
+    </section>
 
- <script src="index.js"></script>
+    <section class="section" id="funciones">
+      <div class="section-head">
+        <div>
+          <h3>Tres funciones clave</h3>
+          <p>El proyecto se organiza alrededor de tres ejes: colaborar, alertar y educar.</p>
+        </div>
+      </div>
+      <div class="grid">
+        <article class="feature"><div class="k">01</div><h4>Colaboración</h4><p>Espacios de chat y coordinación para apoyar rescates, difusión y vínculos entre vecinos y organizaciones.</p></article>
+        <article class="feature"><div class="k">02</div><h4>Alertas</h4><p>Notificaciones sobre nuevas colonias, gatos perdidos o casos que requieran atención rápida.</p></article>
+        <article class="feature"><div class="k">03</div><h4>Educación</h4><p>Tutoriales simples para actuar correctamente frente a rescates, adopción y tenencia responsable.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="implementacion">
+      <div class="section-head">
+        <div>
+          <h3>Ruta de implementación</h3>
+          <p>Pasos claros para pasar de concepto a una prueba real en la comuna.</p>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="step"><div class="num">1</div><h4>Investigar</h4><p>Levantar antecedentes, revisar referentes y comprender mejor las necesidades del usuario.</p></div>
+        <div class="step"><div class="num">2</div><h4>Diseñar</h4><p>Definir identidad visual, estructura de app, campañas y piezas de apoyo para el territorio.</p></div>
+        <div class="step"><div class="num">3</div><h4>Prototipar</h4><p>Construir una primera versión del sistema para evaluar claridad, uso y coherencia visual.</p></div>
+        <div class="step"><div class="num">4</div><h4>Validar</h4><p>Probar con usuarios, recoger observaciones y preparar un piloto en Recoleta.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="resultado">
+      <div class="footer">
+        <div class="note"><h4>Resultado esperado</h4><p>Una solución que una diseño gráfico, experiencia de usuario y participación ciudadana para responder a un problema social real.</p></div>
+        <div class="note"><h4>Diferenciación</h4><p>No se queda en informar: crea una experiencia activa que transforma la preocupación por el problema en acción organizada.</p></div>
+      </div>
+      <div class="divider"></div>
+      <div class="footbar">
+        <span>GEOCAT · Proyecto académico</span>
+        <span>Colaboración · Alertas · Educación</span>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
